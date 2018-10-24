@@ -1,0 +1,108 @@
+<TelaPrincipal@BoxLayout>:
+    orientation: 'vertical'
+
+#título:
+    Label:
+        markup: True
+        text: '[b][i]Parâmetros de Execução[/b][/i]'
+        font_size: '40sp'
+        size_hint: .8, .1
+        pos_hint: {'center_x': .5, 'top': 1.}
+
+#origem:
+    Label:
+        markup: True
+        text: '[b][i]Origem[/i][/b]'
+        size_hint: .8, .1
+        pos_hint: {'center_x': .5, 'top': .9}
+
+    TextInput:
+        id: origem
+        text: 'MS'
+        value: 10
+        size_hint: .8, .05
+        pos_hint: {'x': .1, 'top': .83}
+
+
+#destino:
+    Label:
+        markup: True
+        text: '[b][i]Destino[/b][/i]'
+        size_hint: .8, .05
+        pos_hint: {'center_x': .5, 'top': .77}
+
+    TextInput:
+        id: destino
+        size_hint: .8, .05
+        pos_hint: {'x': .1, 'top': .73}
+        text: 'PB'
+
+#coef_evaporacao:
+    Label:
+        markup: True
+        text: '[b][i]Coeficiente de Evaporação[/b][/i]'
+        size_hint: .8, .05
+        pos_hint: {'center_x': .5, 'top': .67}
+
+    TextInput:
+        id: coef_evaporacao
+        size_hint: .8, .05
+        pos_hint: {'x': .1, 'top': .63}
+        text: '0.3'
+
+#n_iteracoes:
+    Label:
+        markup: True
+        text: '[b][i]Número de Iterações[/b][/i]'
+        size_hint: .8, .05
+        pos_hint: {'center_x': .5, 'top': .57}
+
+    TextInput:
+        id: n_iteracoes
+        size_hint: .8, .05
+        pos_hint: {'x': .1, 'top': .53}
+        text: '100'
+
+#vel_execucao:
+    Label:
+        markup: True
+        text: '[b][i]Velocidade de Execução (ms)[/b][/i]'
+        size_hint: .8, .05
+        pos_hint: {'center_x': .5, 'top': .47}
+
+    TextInput:
+        id: vel_execucao
+        size_hint: .8, .05
+        pos_hint: {'x': .1, 'top': .43}
+        text: '700'
+
+#n_formigas:
+    Label:
+        markup: True
+        text: '[b][i]Número de Formigas[/b][/i]'
+        size_hint: .8, .05
+        pos_hint: {'center_x': .5, 'top': .37}
+
+    TextInput:
+        id: n_formigas
+        size_hint: .8, .05
+        pos_hint: {'x': .1, 'top': .33}
+        text: '5'
+
+#btn1:
+    Button:
+        id: btn1
+        text: 'Executar'
+        size_hint: .2, .1
+        pos_hint: {'center_x': .65, 'top': .25}
+        background_color: (0, 255, 0, .4)
+        on_press: root.on_press_btn1()
+
+#btn1:
+    Button:
+        id: btn2
+        text: 'Sair'
+        size_hint: .2, .1
+        pos_hint: {'center_x': .35, 'top': .25}
+        background_color: (255, 0, 0, .4)
+        on_release: app.stop()

@@ -1,0 +1,15 @@
+Necessário a instalação de algumas dependencias
+para a execução, testes e demonstração do projeto.
+
+sudo pip install networkx
+sudo pip install matplotlib
+sudo pip install numpy
+sudo pip install pandas
+sudo pip install seaborn
+
+** A interface gráfica é a execução do projeto
+kivi > 1.9
+
+instalar e verificar documentação sobre como implementá-la
+
+demais dependências já resolvidas na instalação do python 3.5 ou superior

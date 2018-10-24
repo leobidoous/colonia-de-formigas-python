@@ -1,0 +1,8 @@
+Package: Ant-Colony-Simulator
+Version: 1.0
+Maintainer: Leonardo Bidó <leobidoous@icloud.com>
+Section: graphics
+Architecture: all
+Priority: extra
+Description: Algoritmo Genético Colônia de Formigas
+ Este algoritmo resolve e demonstra graficamente como é realizada a busca pelo caminho ótimo dado um grafo de tamanho N.
